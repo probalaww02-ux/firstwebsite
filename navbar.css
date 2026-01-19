@@ -1,48 +1,44 @@
-.navbar {
-  background-color: #0a58ca;
-  padding: 15px;
+.navbar{
+  background:#ffffff;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
 }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  margin-right: 25px;
-  font-weight: bold;
-}
 .logo{
-  margin-right: 25px;
-}
-.navbar {
-  background-color: #0b57d0;
-  padding: 15px 25px;
-  display: flex;
-  align-items: center;
+  font-size:24px;
+  font-weight:bold;
+  color:#1a2c57;
 }
 
-/* Name & title stay left */
-.navbar .logo {
-  color: white;
+.logo span{
+  display:block;
+  font-size:14px;
+  color:#6c7aa1;
 }
 
-/* Menu moves right */
-.navbar .menu {
-  margin-left: auto;   /* ⭐ THIS moves items to right */
+.navbar nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:#1a2c57;
+  font-weight:500;
 }
 
-/* Menu links */
-.navbar .menu a {
-  color: white;
-  text-decoration: none;
-  margin-left: 25px;
-  font-weight: bold;
-  font-size: 16px;
+.navbar nav a:hover{
+  color:#3b6cff;
 }
 
-.navbar .menu a:hover {
-  text-decoration: underline;
+/* Mobile */
+@media(max-width:600px){
+  .navbar{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+  }
+  .navbar nav a{
+    margin-left:0;
+    margin-right:15px;
+  }
 }
-
-
-
-
-
