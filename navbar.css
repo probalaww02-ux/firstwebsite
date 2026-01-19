@@ -12,6 +12,36 @@
 .logo{
   margin-right: 25px;
 }
+.navbar {
+  background-color: #0b57d0;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+}
+
+/* Name & title stay left */
+.navbar .logo {
+  color: white;
+}
+
+/* Menu moves right */
+.navbar .menu {
+  margin-left: auto;   /* ⭐ THIS moves items to right */
+}
+
+/* Menu links */
+.navbar .menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navbar .menu a:hover {
+  text-decoration: underline;
+}
+
 
 
 
