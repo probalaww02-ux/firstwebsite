@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset="UTF-8">
+<title>Contact Us</title>
+
+<!-- EmailJS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+</head>
+
+<script>
+(function(){
+  emailjs.init("Z695lW5ECoAgTWh2P"); // ✅ YOUR Public Key
+})();
+</script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- EmailJS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("Z695lW5ECoAgTWh2P"); // Public Key
+})();
+</script>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+}
+
+/* Contact Box */
+.contact-box {
+  width: 100%;
+  max-width: 400px;
+  margin: 80px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+input, textarea, button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+#status {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* WhatsApp Button */
+.whatsapp-float{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 24px;
+  padding: 14px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.whatsapp-float:hover{
+  background:#1ebe5d;
+}
+</style>
+</head>
+
+<body>
+
+<div class="contact-box">
+  <h2>Contact Us</h2>
+
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div id="status"></div>
+</div>
+
+<a href="https://wa.me/917868943475" class="whatsapp-float" target="_blank">💬</a>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_lnn4wge",
+    "template_djefzlg",
+    this,
+    "Z695lW5ECoAgTWh2P"
+  )
+  .then(function() {
+    document.getElementById("status").innerHTML = "✅ Message sent successfully!";
+    document.getElementById("contact-form").reset();
+  })
+  .catch(function(error) {
+    document.getElementById("status").innerHTML = "❌ Error: " + error.text;
+  });
+});
+</script>
+
+
+<script>
+/* ✅ Mobile Responsive */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 16px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .logo span {
+    font-size: 12px;
+  }
+
+  .navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar nav a {
+    margin-left: 0;
+    font-weight: 600;
+  }
+}
+
+.contact-box {
+  width: 400px;
+  margin: 60px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+input, textarea, button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+#status {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+</style>
+
+
+<body>
+<header class="navbar">
+  <div class="logo">
+    BALAKUMAR A
+    <span>Diploma Computer Science</span>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="https://gptariyalur.com/" target="_blank">MyCollege</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
+<div class="contact-box">
+  <h2>Contact Us</h2>
+
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+  
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div id="status"></div>
+</div>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_lnn4wge",      // ✅ Service ID
+    "template_djefzlg",     // ✅ Template ID
+    this,
+    "Z695lW5ECoAgTWh2P"     // ✅ Public Key
+  )
+  .then(function() {
+    document.getElementById("status").innerHTML = "✅ Message sent successfully!";
+    document.getElementById("contact-form").reset();
+  })
+  .catch(function(error) {
+    document.getElementById("status").innerHTML = "❌ Error: " + error.text;
+    console.log("EmailJS Error:", error);
+  });
+});
+</script>
+<a href="https://wa.me/917868943475" class="whatsapp-float" target="_blank">
+  💬
+</a>
+
+<style>
+.whatsapp-float{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 24px;
+  padding: 14px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.whatsapp-float:hover{
+  background:#1ebe5d;
+}
+</style>
+
+
+</body>
+</html>
