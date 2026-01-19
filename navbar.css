@@ -6,7 +6,7 @@
 .navbar a {
   color: white;
   text-decoration: none;
-  margin-right: 20px;
+  margin-left: 25px;;
   font-weight: bold;
 }
 
@@ -29,3 +29,4 @@
 .navbar a:hover {
   text-decoration: underline;
 }
+
